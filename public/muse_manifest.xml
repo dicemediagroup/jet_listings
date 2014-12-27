@@ -1,55 +1,61 @@
-<manifest alg="2" build="10" opt="true" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" resolutions="1x" timestamp="1419648788847">
+<manifest alg="2" build="10" opt="true" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" resolutions="1x" timestamp="1419722998935">
+  <folder name="tablet">
+    <folder name="css">
+      <file name="index.css" crc="3964970448" ref="tablet>index"/>
+    </folder>
+    <file name="index.html" crc="3812970651" mt="1419660131947" redirect="false"/>
+  </folder>
+  <folder name="phone">
+    <folder name="css">
+      <file name="index.css" crc="4107295331" ref="phone>index"/>
+    </folder>
+    <file name="index.html" crc="372570209" mt="1419660131723" redirect="false"/>
+  </folder>
   <folder name="css">
     <file name="site_global.css" crc="365011649"/>
-    <file name="master_a-master.css" crc="3968357508" ref="home:blog:untitled-7:gsa-housing:housing-package:index"/>
-    <file name="home.css" crc="481782684" ref="home"/>
-    <file name="blog.css" crc="481782684" ref="blog"/>
-    <file name="untitled-7.css" crc="481782684" ref="untitled-7"/>
-    <file name="gsa-housing.css" crc="481782684" ref="gsa-housing"/>
-    <file name="housing-package.css" crc="481782684" ref="housing-package"/>
-    <file name="index.css" crc="448914933" ref="index"/>
+    <file name="master_a-master.css" crc="3531498" ref="home:untitled-7:untitled-8:news-letter"/>
+    <file name="home.css" crc="529832509" ref="home"/>
+    <file name="untitled-7.css" crc="529832509" ref="untitled-7"/>
+    <file name="housing-package.css" crc="472179958" ref="housing-package"/>
+    <file name="index.css" crc="364896651" ref="index"/>
+    <file name="short-term.css" crc="285339621" ref="short-term"/>
+    <file name="master_b-master.css" crc="4130899469" ref="index:short-term"/>
+    <file name="untitled-8.css" crc="529832509" ref="untitled-8"/>
+    <file name="news-letter.css" crc="4249202285" ref="news-letter"/>
   </folder>
   <folder name="scripts">
-    <file name="jquery-1.8.3.min.js" crc="4164521501" ref="home:blog:gsa-housing:housing-package:index:untitled-7"/>
-    <file name="museutils.js" crc="3777594392" ref="home:blog:gsa-housing:housing-package:index:untitled-7"/>
+    <file name="jquery-1.8.3.min.js" crc="4164521501" ref="home:housing-package:index:untitled-7:phone>index:tablet>index:short-term:news-letter:untitled-8"/>
+    <file name="museutils.js" crc="3777594392" ref="home:housing-package:index:untitled-7:phone>index:tablet>index:short-term:news-letter:untitled-8"/>
     <file name="pie.js" crc="3827607177" ref="home:index"/>
-    <file name="jquery.musemenu.js" crc="415733523" ref="home:blog:gsa-housing:housing-package:index:untitled-7"/>
-    <file name="webpro.js" crc="474087315" ref="home:blog:gsa-housing:housing-package:index:untitled-7"/>
-    <file name="form_check.php" crc="306825315" ref="home:blog:gsa-housing:housing-package:index:untitled-7"/>
-    <file name="form_throttle.php" crc="4293816517" ref="home:blog:gsa-housing:housing-package:index:untitled-7"/>
-    <file name="form_process.php" crc="109188895" ref="home:blog:gsa-housing:housing-package:index:untitled-7"/>
-    <file name="form-u308.php" crc="3899956708" ref="home:blog:gsa-housing:housing-package:index:untitled-7"/>
-    <file name="musewpslideshow.js" crc="274584885" ref="home:blog:gsa-housing:housing-package:index:untitled-7"/>
-    <file name="jquery.museoverlay.js" crc="170414611" ref="home:blog:gsa-housing:housing-package:index:untitled-7"/>
-    <file name="touchswipe.js" crc="100683906" ref="home:blog:gsa-housing:housing-package:index:untitled-7"/>
-    <file name="jquery.watch.js" crc="4144919381" ref="home:blog:gsa-housing:housing-package:index:untitled-7"/>
-    <file name="html5shiv.js" crc="4241844378" ref="home:blog:gsa-housing:housing-package:index:untitled-7"/>
+    <file name="jquery.musemenu.js" crc="415733523" ref="home:untitled-7:news-letter:untitled-8"/>
+    <file name="webpro.js" crc="474087315" ref="index:short-term"/>
+    <file name="musewpslideshow.js" crc="274584885" ref="index:short-term"/>
+    <file name="jquery.museoverlay.js" crc="170414611" ref="index:short-term"/>
+    <file name="touchswipe.js" crc="100683906" ref="index:short-term"/>
+    <file name="jquery.watch.js" crc="4144919381" ref="home:housing-package:index:untitled-7:phone>index:tablet>index:short-term:news-letter:untitled-8"/>
+    <file name="html5shiv.js" crc="4241844378" ref="home:housing-package:index:untitled-7:short-term:news-letter:untitled-8"/>
   </folder>
   <folder name="images">
-    <file name="u145-sprite.png" crc="248024553" ref="home:blog:gsa-housing:housing-package:index:untitled-7"/>
-    <file name="u146-4.png" crc="4198395996" ref="home:blog:gsa-housing:housing-package:index:untitled-7"/>
-    <file name="img_0045.jpg" crc="3828444822" ref="home:blog:gsa-housing:housing-package:index:untitled-7"/>
-    <file name="u319-17.png" crc="209764226" ref="home:blog:gsa-housing:housing-package:index:untitled-7"/>
-    <file name="u319-17-r.png" crc="4045924442" ref="home:blog:gsa-housing:housing-package:index:untitled-7"/>
-    <file name="u319-17-m.png" crc="4254700044" ref="home:blog:gsa-housing:housing-package:index:untitled-7"/>
-    <file name="u319-17-fs.png" crc="4197433778" ref="home:blog:gsa-housing:housing-package:index:untitled-7"/>
-    <file name="blue_couch.jpg" crc="116613013" ref="home:blog:gsa-housing:housing-package:index:untitled-7"/>
-    <file name="img_0046.jpg" crc="4170606553" ref="home:blog:gsa-housing:housing-package:index:untitled-7"/>
-    <file name="blank.gif" crc="4208392903" ref="home:blog:gsa-housing:housing-package:index:untitled-7"/>
-    <file name="img_0053.jpg" crc="316123295" ref="home:blog:gsa-housing:housing-package:index:untitled-7"/>
-    <file name="img_0056.jpg" crc="3985079299" ref="home:blog:gsa-housing:housing-package:index:untitled-7"/>
-    <file name="img_0027.jpg" crc="4082372045" ref="home:blog:gsa-housing:housing-package:index:untitled-7"/>
-    <file name="dscn0755.jpg" crc="438761040" ref="home:blog:gsa-housing:housing-package:index:untitled-7"/>
-    <file name="dscn0447.jpg" crc="4162179372" ref="home:blog:gsa-housing:housing-package:index:untitled-7"/>
-    <file name="img_1752.jpg" crc="137202172" ref="home:blog:gsa-housing:housing-package:index:untitled-7"/>
-    <file name="img_1825.jpg" crc="43765293" ref="home:blog:gsa-housing:housing-package:index:untitled-7"/>
-    <file name="loading.gif" crc="3815509949" ref="home"/>
-    <file name="img_0027252x168.jpg" crc="4070188748" ref="index"/>
+    <file name="u145-sprite.png" crc="248024553" ref="home:untitled-7:news-letter:untitled-8"/>
+    <file name="u146-4.png" crc="4198395996" ref="home:untitled-7:news-letter:untitled-8"/>
+    <file name="img_0045.jpg" crc="3828444822" ref="home:untitled-7:news-letter:untitled-8"/>
+    <file name="blank.gif" crc="4208392903" ref="index:short-term"/>
+    <file name="img_0027.jpg" crc="478491227" ref="index:short-term"/>
+    <file name="dscn0447.jpg" crc="4062750516" ref="home:untitled-7:news-letter:untitled-8"/>
+    <file name="img_1752.jpg" crc="137202172" ref="index:short-term"/>
+    <file name="loading.gif" crc="3815509949" ref="short-term"/>
+    <file name="img_0027252x168.jpg" crc="268932002" ref="index"/>
+    <file name="arrowmenudown.gif" crc="213132104" ref="home"/>
+    <file name="img_1753.jpg" crc="4189908969" ref="short-term:index"/>
+    <file name="img_1750-crop-u782.jpg" crc="4167887480" ref="short-term:index"/>
+    <file name="img_1757.jpg" crc="478137565" ref="short-term:index"/>
+    <file name="img_1773-crop-u810.jpg" crc="4236911339" ref="short-term:index"/>
   </folder>
-  <file name="home.html" crc="511983078" mt="1419648749255" redirect="true"/>
-  <file name="blog.html" crc="431072525" mt="1419648749256" redirect="true"/>
-  <file name="gsa-housing.html" crc="4124827637" mt="1419648749257" redirect="true"/>
-  <file name="housing-package.html" crc="157332453" mt="1419648749258" redirect="true"/>
-  <file name="index.html" crc="4041328167" mt="1419648749259" redirect="true"/>
-  <file name="untitled-7.html" crc="4139380825" mt="1419648749260" redirect="true"/>
+  <file name="home.html" crc="150450497" mt="1419722994731" redirect="true"/>
+  <file name="housing-package.html" crc="3864282811" mt="1419662008388" redirect="false"/>
+  <file name="index.html" crc="4109753907" mt="1419722993952" redirect="true"/>
+  <file name="untitled-7.html" crc="4051163514" mt="1419722994741" redirect="true"/>
+  <file name="short-term.html" crc="120018461" mt="1419722993950" redirect="true"/>
+  <file name="news-letter.html" crc="3886048232" mt="1419722994732" redirect="true"/>
+  <file name="untitled-8.html" crc="3813831988" mt="1419722994742" redirect="true"/>
 </manifest>

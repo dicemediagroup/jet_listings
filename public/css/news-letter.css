@@ -1,7 +1,7 @@
-.version.home /* version checker */
+.version.news_letter /* version checker */
 {
-	color: #00001F;
-	background-color: #949A3D;
+	color: #0000FD;
+	background-color: #45AE6D;
 }
 
 .html
@@ -482,6 +482,55 @@
 #u146-4
 {
 	z-index: 59;
+	margin-right: -10000px;
+}
+
+#pu939
+{
+	z-index: 105;
+	width: 0.01px;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 112px;
+	margin-left: 544px;
+}
+
+#u939
+{
+	z-index: 0;
+	width: 140px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #000000;
+	background-color: #0000FF;
+	opacity: 0.4;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+	filter: alpha(opacity=40);
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+}
+
+#pu940-6
+{
+	width: 0.01px;
+	position: relative;
+	left: 19px;
+	padding-top: 50px;
+	z-index: 2;
+	padding-bottom: 394px;
+}
+
+#u940-6
+{
+	z-index: 106;
+	width: 103px;
+	min-height: 34px;
+	background-color: transparent;
+	line-height: 22px;
+	font-size: 18px;
+	color: #FFFFFF;
+	position: relative;
 	margin-right: -10000px;
 }
 

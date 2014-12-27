@@ -1,0 +1,96 @@
+#u412
+{
+	background-color: transparent;
+	position: relative;
+}
+
+#u819
+{
+	border-width: 1px;
+	border-style: solid;
+	border-color: #000000;
+	background-color: #FFFFFF;
+	position: relative;
+}
+
+#u820-4
+{
+	background-color: transparent;
+	line-height: 36px;
+	font-size: 30px;
+	position: relative;
+}
+
+#u821
+{
+	border-width: 1px;
+	border-style: solid;
+	border-color: #000000;
+	background-color: #C69C6D;
+	position: relative;
+}
+
+#u822-4
+{
+	background-color: transparent;
+	font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
+	position: relative;
+}
+
+#slideshowu739
+{
+	position: relative;
+}
+
+#u768_clip,#u796_clip
+{
+	overflow: hidden;
+}
+
+#u749,#u768,#u782,#u796,#u810
+{
+	border-style: none;
+	border-color: transparent;
+	background-color: #4F4F4F;
+	position: relative;
+}
+
+#u748,#u743
+{
+	position: absolute;
+	background-color: transparent;
+}
+
+#u744-4,#u774-4,#u788-4,#u802-4,#u816-4
+{
+	border-style: none;
+	border-color: transparent;
+	background-color: #FFFFFF;
+	line-height: 20px;
+	color: #999999;
+	font-family: Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
+	position: relative;
+}
+
+#u752-4,#u742-4,#u747-4
+{
+	position: absolute;
+	border-style: none;
+	border-color: transparent;
+	background-color: #FFFFFF;
+	color: #999999;
+	line-height: 20px;
+	text-align: center;
+	font-family: Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
+}
+
+.SSFirstButton,.SSPreviousButton,.SSNextButton,.SSLastButton,.SSSlideLink,.SSCloseButton /* slideshowFreeStyle */
+{
+	cursor: pointer;
+}
+
+.SSSlideLoading /* slideshowFreeStyle */
+{
+	background: url("../images/loading.gif") no-repeat center center;
+}
+
