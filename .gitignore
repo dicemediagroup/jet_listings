@@ -13,4 +13,4 @@
 /tmp
 
 # Ignore rvm files
-./ruby*
+.ruby*
