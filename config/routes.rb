@@ -1,8 +1,12 @@
 Rails.application.routes.draw do
-  mount RailsAdmin::Engine => '/backstage', as: 'rails_admin'
-  get 'listings/index'
+  get 'neighborhoods/index'
 
-  get 'listings/show'
+  get 'neighborhoods/show'
+
+  mount RailsAdmin::Engine => '/backstage', as: 'rails_admin'
+  
+  resources :locations, only: [:index, :show]
+  resources :neighborhoods, only: [:index, :show]
 
   get 'welcome/index'
 
