@@ -1,8 +1,18 @@
 <h1><%= @neighborhood.title %></h1>
 
 
-<ul>
+<div>
+	<h2>Neighborhood Locations</h2>
+	<ul>
 	<% @locations.each do |location| %>
 		<li><%= link_to location.title, location_path(location) %> </li>
 	<%end %>
 </ul>
+</div><div>
+	<h2>Community Amenities</h2>
+	<ul>
+		<% @neighborhood.amenities.each do |amenity| %>
+			<li><%= amenity.title %> </li>
+		<%end %>
+	</ul>
+</div>
