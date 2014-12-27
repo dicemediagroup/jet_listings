@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.1.5'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -22,6 +23,12 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
+
+# admin of models
+gem 'rails_admin', '~> 0.6.6'
+
+# better Heroku
+gem 'rails_12factor', '~> 0.0.3'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
