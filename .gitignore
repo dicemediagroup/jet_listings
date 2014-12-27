@@ -14,3 +14,6 @@
 
 # Ignore rvm files
 .ruby*
+
+# Ignore enviromental variables
+.env
