@@ -1,0 +1,61 @@
+<manifest alg="2" build="10" opt="true" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" resolutions="1x" timestamp="1419724991848">
+  <folder name="tablet">
+    <folder name="css">
+      <file name="index.css" crc="3964970448" ref="tablet>index"/>
+    </folder>
+    <file name="index.html" crc="3812970651" mt="1419660131947" redirect="false"/>
+  </folder>
+  <folder name="phone">
+    <folder name="css">
+      <file name="index.css" crc="4107295331" ref="phone>index"/>
+    </folder>
+    <file name="index.html" crc="372570209" mt="1419660131723" redirect="false"/>
+  </folder>
+  <folder name="css">
+    <file name="site_global.css" crc="365011649"/>
+    <file name="master_a-master.css" crc="3801538312" ref="home:untitled-7:untitled-8:news-letter"/>
+    <file name="home.css" crc="4280920643" ref="home"/>
+    <file name="untitled-7.css" crc="4280920643" ref="untitled-7"/>
+    <file name="housing-package.css" crc="472179958" ref="housing-package"/>
+    <file name="index.css" crc="351305010" ref="index"/>
+    <file name="short-term.css" crc="3925281161" ref="short-term"/>
+    <file name="master_b-master.css" crc="494213750" ref="index:short-term"/>
+    <file name="untitled-8.css" crc="4280920643" ref="untitled-8"/>
+    <file name="news-letter.css" crc="54019422" ref="news-letter"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="4164521501" ref="home:housing-package:index:untitled-7:phone>index:tablet>index:short-term:news-letter:untitled-8"/>
+    <file name="museutils.js" crc="3777594392" ref="home:housing-package:index:untitled-7:phone>index:tablet>index:short-term:news-letter:untitled-8"/>
+    <file name="pie.js" crc="3827607177" ref="home:index"/>
+    <file name="jquery.musemenu.js" crc="415733523" ref="home:untitled-7:news-letter:untitled-8:short-term:index"/>
+    <file name="webpro.js" crc="474087315" ref="index:short-term"/>
+    <file name="musewpslideshow.js" crc="274584885" ref="index:short-term"/>
+    <file name="jquery.museoverlay.js" crc="170414611" ref="index:short-term"/>
+    <file name="touchswipe.js" crc="100683906" ref="index:short-term"/>
+    <file name="jquery.watch.js" crc="4144919381" ref="home:housing-package:index:untitled-7:phone>index:tablet>index:short-term:news-letter:untitled-8"/>
+    <file name="html5shiv.js" crc="4241844378" ref="home:housing-package:index:untitled-7:short-term:news-letter:untitled-8"/>
+  </folder>
+  <folder name="images">
+    <file name="u145-sprite.png" crc="248024553" ref="home:untitled-7:news-letter:untitled-8"/>
+    <file name="u146-4.png" crc="4198395996" ref="home:untitled-7:news-letter:untitled-8"/>
+    <file name="img_0045.jpg" crc="3828444822" ref="home:untitled-7:news-letter:untitled-8"/>
+    <file name="blank.gif" crc="4208392903" ref="index:short-term"/>
+    <file name="img_0027.jpg" crc="4251964622" ref="index"/>
+    <file name="dscn0447.jpg" crc="4062750516" ref="home:untitled-7:news-letter:untitled-8"/>
+    <file name="img_1752.jpg" crc="137202172" ref="index:short-term"/>
+    <file name="loading.gif" crc="3815509949" ref="short-term"/>
+    <file name="arrowmenudown.gif" crc="213132104" ref="home"/>
+    <file name="img_1753.jpg" crc="4189908969" ref="short-term:index"/>
+    <file name="img_1750-crop-u782.jpg" crc="4167887480" ref="short-term:index"/>
+    <file name="img_1757.jpg" crc="478137565" ref="short-term:index"/>
+    <file name="img_1773-crop-u810.jpg" crc="4236911339" ref="short-term:index"/>
+    <file name="corbis-42-64865255.jpg" crc="310617460" ref="short-term:index"/>
+  </folder>
+  <file name="home.html" crc="3962386151" mt="1419723247980" redirect="true"/>
+  <file name="housing-package.html" crc="3864282811" mt="1419662008388" redirect="false"/>
+  <file name="index.html" crc="175289593" mt="1419724988701" redirect="true"/>
+  <file name="untitled-7.html" crc="218782852" mt="1419723247983" redirect="true"/>
+  <file name="short-term.html" crc="3911880667" mt="1419724968703" redirect="true"/>
+  <file name="news-letter.html" crc="4020517578" mt="1419723247982" redirect="true"/>
+  <file name="untitled-8.html" crc="230672908" mt="1419723247984" redirect="true"/>
+</manifest>
