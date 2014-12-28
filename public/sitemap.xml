@@ -49,12 +49,6 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://www.parcgatewaycondo.com/images/img_0027252x168.jpg</loc>
-    <lastmod>2014-12-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>http://www.parcgatewaycondo.com/images/arrowmenudown.gif</loc>
     <lastmod>2014-12-27</lastmod>
     <changefreq>weekly</changefreq>
@@ -80,6 +74,12 @@
   </url>
   <url>
     <loc>http://www.parcgatewaycondo.com/images/img_1773-crop-u810.jpg</loc>
+    <lastmod>2014-12-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.parcgatewaycondo.com/images/corbis-42-64865255.jpg</loc>
     <lastmod>2014-12-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

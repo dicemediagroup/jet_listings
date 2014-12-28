@@ -1,42 +1,3 @@
-#u412
-{
-	background-color: transparent;
-	position: relative;
-}
-
-#u819
-{
-	border-width: 1px;
-	border-style: solid;
-	border-color: #000000;
-	background-color: #FFFFFF;
-	position: relative;
-}
-
-#u820-4
-{
-	background-color: transparent;
-	line-height: 36px;
-	font-size: 30px;
-	position: relative;
-}
-
-#u821
-{
-	border-width: 1px;
-	border-style: solid;
-	border-color: #000000;
-	background-color: #C69C6D;
-	position: relative;
-}
-
-#u822-4
-{
-	background-color: transparent;
-	font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
-	position: relative;
-}
-
 #slideshowu739
 {
 	position: relative;
@@ -84,13 +45,198 @@
 	font-family: Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
 }
 
-.SSFirstButton,.SSPreviousButton,.SSNextButton,.SSLastButton,.SSSlideLink,.SSCloseButton /* slideshowFreeStyle */
-{
-	cursor: pointer;
-}
-
 .SSSlideLoading /* slideshowFreeStyle */
 {
 	background: url("../images/loading.gif") no-repeat center center;
+}
+
+#u820-4
+{
+	background-color: transparent;
+	color: #FFFFFF;
+	line-height: 36px;
+	font-size: 30px;
+	text-align: center;
+	position: relative;
+}
+
+#u821
+{
+	background: -webkit-gradient(linear, center top, center bottom, from(#29ABE2),color-stop(100%, #000000));
+	background: -webkit-linear-gradient(top,#29ABE2 ,#000000 100%);
+	background: -o-linear-gradient(top,#29ABE2 ,#000000 100%);
+	background: linear-gradient(to bottom,#29ABE2 ,#000000 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF29ABE2, endColorstr=#FF000000, GradientType=0);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF29ABE2', endColorstr='#FF000000', GradientType=0)";
+	border-width: 1px;
+	border-style: solid;
+	border-color: #000000;
+	position: relative;
+}
+
+#u822-4
+{
+	background-color: transparent;
+	font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
+	position: relative;
+}
+
+#menuu1003
+{
+	border-style: none;
+	border-color: transparent;
+	background-color: #000000;
+	position: relative;
+}
+
+#u1005
+{
+	background-color: #000000;
+	position: relative;
+}
+
+#u1005:hover
+{
+	background-color: #999999;
+}
+
+#u1005:active
+{
+	background-color: #6B6B6B;
+}
+
+#u1007-4
+{
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	color: #FFFFFF;
+	text-align: center;
+	font-family: Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
+	position: relative;
+}
+
+#u1012
+{
+	background-color: #000000;
+	position: relative;
+}
+
+#u1005.MuseMenuActive,#u1012:hover
+{
+	background-color: #999999;
+}
+
+#u1012:active
+{
+	background-color: #6B6B6B;
+}
+
+#u1015-4
+{
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	color: #FFFFFF;
+	text-align: center;
+	font-family: Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
+	position: relative;
+}
+
+#u1021
+{
+	background-color: #000000;
+	position: relative;
+}
+
+#u1012.MuseMenuActive,#u1021:hover
+{
+	background-color: #999999;
+}
+
+#u1021:active
+{
+	background-color: #6B6B6B;
+}
+
+#u1023-4
+{
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	color: #FFFFFF;
+	text-align: center;
+	font-family: Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
+	position: relative;
+}
+
+#u1028
+{
+	background-color: #000000;
+	position: relative;
+}
+
+#u1021.MuseMenuActive,#u1028:hover
+{
+	background-color: #999999;
+}
+
+#u1028:active
+{
+	background-color: #6B6B6B;
+}
+
+#u1030-4
+{
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	color: #FFFFFF;
+	text-align: center;
+	font-family: Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
+	position: relative;
+}
+
+#u1039,#u1004,#u1011,#u1018,#u1025,#u1032
+{
+	background-color: transparent;
+	position: relative;
+}
+
+#u1035
+{
+	background-color: #000000;
+	position: relative;
+}
+
+#u1028.MuseMenuActive,#u1035:hover
+{
+	background-color: #999999;
+}
+
+#u1035:active
+{
+	background-color: #6B6B6B;
+}
+
+#u1035.MuseMenuActive
+{
+	background-color: #999999;
+}
+
+#u1037-4
+{
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	color: #FFFFFF;
+	text-align: center;
+	font-family: Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
+	position: relative;
+}
+
+.SSFirstButton,.SSPreviousButton,.SSNextButton,.SSLastButton,.SSSlideLink,.SSCloseButton,.MenuItem /* slideshowFreeStyle */
+{
+	cursor: pointer;
 }
 
