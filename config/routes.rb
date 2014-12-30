@@ -7,8 +7,7 @@ Rails.application.routes.draw do
   
   resources :locations, only: [:index, :show]
   resources :neighborhoods, only: [:index, :show]
-
-  get 'welcome/index'
+  resources :welcome, only: [:index]
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
