@@ -57,53 +57,8 @@
         <!-- .span8 -->
         
         <div class="span4">
-                        
-				                    <div class="widget map box-container padding30">
-                        <h3 class="widget-title">Map &amp; Directions</h3>
-                        <div id="map-listing-single"></div>
-                        <script type="text/javascript"> 
-                            jQuery(document).ready(function() {
-                                jQuery("#map-listing-single").goMap({ 
-                                    markers: [{  
-                                        address: "<%= "#{@location.street1}, #{@location.city}, #{@location.state}" %>", 
-                                        title: '<%= "#{@location.street1}, #{@location.city}, #{@location.state}" %>' ,
-                                        icon: ''
-                                    }],
-                                    disableDoubleClickZoom: true,
-                                    zoom: 15,
-                                    maptype: 'ROADMAP'
-                                }); 
             
-                            });
-                        </script>
-                        
-                        <iframe src="<%= "http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=" + CGI.escape("#{@location.street1} #{@location.city} #{@location.state}") + "&amp;output=embed" %>"></iframe>
-                    </div>
-                                                                
-             
-            
-            <div class="widget agent-box box-container clearfix padding30">
-                <div class="clearfix">
-                    <div class="pull-left">
-						<%= image_tag "Jim_Tanner_Avatar_1391639635_70x70.jpg", 
-						size: "70x70" %>
-					</div>
-                    <div class="pull-left">
-                        <h3>Contact Agent</h3>
-                        <ul>
-                            <li>Jim Tanner</li>
-                            <li>801-644-2440</li>
-                        </ul>
-                    </div>
-                </div>
-                                <form method="post" action="http://demo.favethemes.com/wp/realto/property/199-s-beacon-st-san-pedro-ca-90731/">
-                <input type="hidden" name="submitted" id="submitted" value="true" />   
-                    <input class="input-block-level" name="sender_name" required="required" type="text" placeholder="Your name">
-                    <input class="input-block-level" required="required" name="sender_email" type="email" placeholder="Your email">
-                    <textarea class="input-block-level" name="sender_msg" required="required" rows="5">Hello, I'm interested in [<%= "#{@location.title}, #{@location.city}, #{@location.state}" %>]</textarea>
-                    <button type="submit" class="btn btn-realto">Contact Agent</button>
-                </form>
-            </div>
+            <%= render :partial => 'agent_box' %>
             <!-- .agent-box -->
             
         </div>
