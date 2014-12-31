@@ -1,18 +1,57 @@
 <h1><%= @neighborhood.title %></h1>
 
 
-<div>
-	<h2>Neighborhood Locations</h2>
-	<ul>
-	<% @locations.each do |location| %>
-		<li><%= link_to location.title, location_path(location) %> </li>
-	<%end %>
-</ul>
-</div><div>
+
+
+<div class="container page-content">
+
+    <div class="row">
+
+        <div class="span12">
+
+            <div class="row">
+
+                
+
+                
+				<%= render @locations %>
+
+			   
+            </div>
+
+            <!-- .row -->
+
+        </div>
+
+        <!-- .span12 -->
+
+        
+
+    </div>
+
+    <!-- .row -->
+
+</div>
+
+<!-- .container -->
+
+
+
+<!-- Page Content -->
+
+<div class="container">
+
+    <div class="row">
+
 	<h2>Community Amenities</h2>
 	<ul>
 		<% @neighborhood.amenities.each do |amenity| %>
 			<li><%= amenity.title %> </li>
 		<%end %>
 	</ul>
+     
+	</div>
+
 </div>
+
+

@@ -1,0 +1,51 @@
+        <div class="span8">
+            <div class="box-container">
+                              
+                               <div class="cycle-slideshow"
+                    data-cycle-fx=fade
+                    data-cycle-timeout=0
+                    data-cycle-swipe=true
+                    data-cycle-pager="#adv-custom-pager"
+                    data-cycle-pager-template='<a href="#" ><img src="{{src}}"></a>'
+                    data-cycle-prev="#prev"
+                    data-cycle-next="#next"
+                >
+				<% @location.photos.each do |photo| %>
+				<%= image_tag photo.image, alt: "image", class: "media-object" %>
+				<% end %>
+												<img alt="image" src="http://demo.favethemes.com/wp/realto/wp-content/uploads/2014/02/49-1024x682.jpg" class="media-object">
+					
+					                                     </div><!-- .cycle-slideshow -->
+                 <div id="adv-custom-pager"></div>
+                                  
+                                             
+                <div class="clearfix">
+                    <div class="clearfix padding30">
+                        <h2 class="prop-title pull-left margin0"><%= "#{@location.title}, #{@location.city}, #{@location.state}" %></h2>
+                        <!-- <span class="prop-price pull-right serif italic">$1,230/week</span> -->
+                    </div>
+                    <div class="clearfix padding030">
+                        <h3>Property Description</h3>
+                        <p><%= @location.description %></p>
+                    </div>
+                    
+                                        
+                    <div class="span8">
+                        <div class="margin300 additional_features">    
+                            <h3>Additional Features</h3>
+                            							<ul>
+															<% @location.features.each do |f| %>
+					                                        <li style="font-weight: bold;color: #363636 !important;"><%= f.title %></li>
+															<% end %>
+                                                            </ul>
+                                                    
+                        </div>
+                       
+                    </div><!-- span8 -->
+                   
+                </div>
+                               
+            </div>
+            
+                        
+        </div>
