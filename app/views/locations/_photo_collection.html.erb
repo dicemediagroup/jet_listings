@@ -10,15 +10,17 @@
                     data-cycle-prev="#prev"
                     data-cycle-next="#next"
                 >
-				<% @location.photos.each do |photo| %>
-				<%= image_tag photo.image.url, alt: "image", class: "media-object" %>
+				<% if @location.photos.size > 0 %>
+					<% @location.photos.each do |photo| %>
+					<%= image_tag photo.image.url, alt: "image", class: "media-object" %>
+					<% end %>
+				<% else %>
+					<%= image_tag "fallback/default.png" %>
 				<% end %>
-												<img alt="image" src="http://demo.favethemes.com/wp/realto/wp-content/uploads/2014/02/49-1024x682.jpg" class="media-object">
 					
-					                                     </div><!-- .cycle-slideshow -->
-                 <div id="adv-custom-pager"></div>
-                                  
-                                             
+			</div><!-- .cycle-slideshow -->
+			<div id="adv-custom-pager"></div>
+
                 <div class="clearfix">
                     <div class="clearfix padding30">
                         <h2 class="prop-title pull-left margin0"><%= "#{@location.title}, #{@location.city}, #{@location.state}" %></h2>
@@ -27,6 +29,8 @@
                     <div class="clearfix padding030">
                         <h3>Property Description</h3>
                         <p><%= @location.description %></p>
+						<%= image_tag "/fallback/default.png" %>
+						
                     </div>
                     
                                         
