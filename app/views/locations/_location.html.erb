@@ -8,7 +8,7 @@
 	<%= link_to(location, class: "span4 overlay", title: "#{location.title}, #{location.city}, #{location.state}") do %>
 	<span class="more"></span>
     		            
-		<%= image_tag location.photos.first.image, alt: "image", class: "attachment-property-regular wp-post-image", height: "454", width:"800"%>
+		<%= image_tag location.photos.first.image.url, alt: "image", class: "attachment-property-regular wp-post-image", height: "454", width:"800"%>
 	
 	<% end %>
 	

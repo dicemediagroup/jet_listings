@@ -11,7 +11,7 @@
                     data-cycle-next="#next"
                 >
 				<% @location.photos.each do |photo| %>
-				<%= image_tag photo.image, alt: "image", class: "media-object" %>
+				<%= image_tag photo.image.url, alt: "image", class: "media-object" %>
 				<% end %>
 												<img alt="image" src="http://demo.favethemes.com/wp/realto/wp-content/uploads/2014/02/49-1024x682.jpg" class="media-object">
 					
