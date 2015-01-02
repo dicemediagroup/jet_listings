@@ -1,9 +1,14 @@
 source 'https://rubygems.org'
-ruby '2.1.5'
+source 'https://rails-assets.org'
 
+ruby '2.1.5'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
+
+# Eviromental vars
+gem 'dotenv-rails', '~> 1.0.2', :groups => [:development, :test]
+
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
@@ -12,6 +17,11 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
+
+# rails-assets.org gems go here
+gem 'rails-assets-bootstrap'
+gem 'rails-assets-angular'
+gem 'rails-assets-leaflet'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
@@ -23,6 +33,11 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
+
+# asset uploading
+gem 'carrierwave', '~> 0.10.0'
+gem 'fog', '~> 1.26.0'
+# gem 'rmagick', '~> 2.13.4'
 
 # admin of models
 gem 'rails_admin', '~> 0.6.6'

@@ -1,6 +1,3 @@
-// Place all the styles related to the welcome controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
 /*
 
 Theme Name: RealTo
@@ -454,7 +451,7 @@ a.overlay {
 	width: 100%;
 	height: 100%;
 	position: absolute;
-	background: #fff url('images/more-icon.png') no-repeat center center;
+	background: #fff url('https://s3.amazonaws.com/fog-demo-1419715807/images/more-icon.png') no-repeat center center;
 }
 .link-pages {
 	text-align: center;
@@ -1578,3 +1575,4 @@ ul.mylist li:nth-child(13),
 ul.mylist li:nth-child(15){
 	margin-left:0px;
 }
+

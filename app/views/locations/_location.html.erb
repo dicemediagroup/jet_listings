@@ -1,0 +1,50 @@
+<div class="span12 box-container">
+
+                        <div class="holder row">
+
+                            
+
+							
+	<%= link_to(location, class: "span4 overlay", title: "#{location.title}, #{location.city}, #{location.state}") do %>
+	<span class="more"></span>
+    		<% if location.photos.size > 0 %>            
+				<%= image_tag location.photos.first.image.url, alt: "image", 
+				class: "attachment-property-regular wp-post-image", height: "454", width:"800"%>
+			<% else %>
+				<%= image_tag "fallback/default.png" %>
+			<% end %>
+			
+	<% end %>
+	
+                            <span class="prop-tag">
+
+								For Rent
+                          	</span>
+
+                            <div class="span8 prop-info">
+
+                                <h3 class="prop-title"><%= "#{location.title}, #{location.city}, #{location.state}"  %></h3>
+
+                                <ul class="more-info clearfix">
+
+                                       <li class="info-label clearfix">
+        <span class="pull-left">Bedrooms</span>
+        <span class="qty pull-right"><%= location.bed %> </span>
+    </li>
+            <li class="info-label clearfix">
+        <span class="pull-left">Bathrooms</span>
+        <span class="qty pull-right"><%= location.bath %> </span>
+   </li>
+      
+      
+      
+      
+         
+            
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                    </div>
