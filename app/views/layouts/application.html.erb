@@ -205,12 +205,28 @@
             <!-- .clearfix -->
 	</div></div>
             <!-- .span3 -->
-            <div class="span3"><div class="footer-widget"><h3 class="widget-title">Company</h3><div class="menu-footer-menu-container"><ul id="menu-footer-menu" class="menu"><li class="m-manage"><a href="/" title="Home"><i class="icon-home"></i></a></li><li id="menu-item-159" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-159"><a href="/">Homepage</a></li>
-<li id="menu-item-154" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-154"><a href="/properties-grid-layout-1/">Properties</a></li>
-<li id="menu-item-155" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-155"><a href="/all-agents/">All Agents</a></li>
-<li id="menu-item-158" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-158"><a href="/blog/">Blog</a></li>
-<li id="menu-item-157" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-157"><a href="/finacing/">Finacing</a></li>
-<li id="menu-item-156" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-156"><a href="/contact-us/">Contact us</a></li>
+            <div class="span3"><div class="footer-widget">
+				<h3 class="widget-title">Company</h3>
+				<div class="menu-footer-menu-container">
+					<ul id="menu-footer-menu" class="menu">
+						<li class="m-manage"><a href="/" title="Home"><i class="fa fa-home"></i>
+</a></li>
+						<li id="menu-item-159" 
+							class="menu-item menu-item-type-post_type menu-item-object-page menu-item-159">
+							<a href="/">Homepage</a>
+						</li>
+						<% @neighborhoods.each do |neighborhood| %>
+							<li id="footer-menu-item-" class="menu-item menu-item-type-post_type 
+							menu-item-object-page">
+							<li><%= link_to neighborhood.title, neighborhood_path(neighborhood) %></li>
+							</li>
+						<%end %>
+						
+						<li id="footer-menu-item-36" class="menu-item menu-item-type-post_type 
+							menu-item-object-page">
+							<%= link_to "Properties", locations_path %>
+						</li>
+
 </ul></div></div></div>
             <!-- .span3 -->
             <div class="span3"><div class="footer-widget"><h3 class="widget-title">Flickr</h3><p>Coming Soon!</p></div></div>
