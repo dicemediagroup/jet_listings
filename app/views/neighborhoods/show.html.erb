@@ -1,3 +1,9 @@
+<div class="container">
+    <div class="search-wrapper">
+    		<h2 class="post-title">Request a Quote</h2>
+	    <%= render :partial => 'quote_request_form' %>
+    </div><!-- .search-wrapper -->
+</div>
 <h1><%= @neighborhood.title %></h1>
 
 
@@ -35,23 +41,61 @@
 
 <!-- .container -->
 
-
-
 <!-- Page Content -->
 
 <div class="container">
-
     <div class="row">
-
-	<h2>Community Amenities</h2>
-	<ul>
-		<% @neighborhood.amenities.each do |amenity| %>
-			<li><%= amenity.title %> </li>
-		<%end %>
-	</ul>
-     
+		<h2>Community Amenities</h2>
+		<ul>
+			<% @neighborhood.amenities.each do |amenity| %>
+				<li><%= amenity.title %> </li>
+			<%end %>
+		</ul>
 	</div>
-
 </div>
 
+<!--Local Text -->
+<div>
+		<hr style="border-width: 3px;" />
+            <div class="row">
+        <div class="span8">
+            
+        
+        <div class="row">
+            <div id="post-322" class="post-308 post type-post status-publish format-standard 
+				has-post-thumbnail hentry category-investments category-real-estate span6 box-container">
+				<%= render :partial => 'local_text' %>
+			</div>
+                
+		</div>
+<!-- .post -->	
+	
 
+            <!-- .post -->
+            
+</div>
+        <!-- .row -->
+    
+        <!-- .row -->
+    
+            <!-- .row -->
+</div>
+        <!-- .span8 -->
+        <div class="span4">
+        	
+
+        
+			<div class="con-sidebar">
+		
+    
+    
+    			<%= render :partial => '/shared/seven_secrets_form_widget' %>
+    
+    		        
+			</div>
+		</div>
+        <!-- .span4 -->
+    </div>
+    <!-- .row -->
+<!-- .Local Text-->
+</div>

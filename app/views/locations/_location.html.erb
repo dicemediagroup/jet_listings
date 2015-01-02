@@ -8,7 +8,7 @@
 	<%= link_to(location, class: "span4 overlay", title: "#{location.title}, #{location.city}, #{location.state}") do %>
 	<span class="more"></span>
     		            
-		<img src="http://demo.favethemes.com/wp/realto/wp-content/uploads/2014/02/Schermata-2014-02-05-alle-13.28.20-800x454.png" class="attachment-property-regular wp-post-image" alt="Schermata 2014-02-05 alle 13.28.20" height="454" width="800">        
+		<%= image_tag location.photos.first.image, alt: "image", class: "attachment-property-regular wp-post-image", height: "454", width:"800"%>
 	
 	<% end %>
 	
