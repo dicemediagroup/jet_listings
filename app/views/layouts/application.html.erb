@@ -136,10 +136,21 @@
                 </button>
                 <!--<div class="nav-collapse collapse">-->
                 						
-					<div class="nav-collapse collapse"><ul id="menu-main-navigation" class="nav"><li class="m-manage"><a href="/" title="Home"><i class="fa fa-home"></i>
-</a></li><li id="nav-menu-item-42" class="main-menu-item dropdown  menu-item-depth-0 menu-item menu-item-type-post_type menu-item-object-page"><%= link_to "Neighborhoods", neighborhoods_path %></li>
-<li id="nav-menu-item-376" class="main-menu-item dropdown  menu-item-depth-0 menu-item menu-item-type-post_type menu-item-object-page"><%= link_to "Parc Gateway", neighborhood_path(1) %></li>
-<li id="nav-menu-item-36" class="main-menu-item dropdown  menu-item-depth-0 menu-item menu-item-type-post_type menu-item-object-page"><%= link_to "Properties", locations_path %></li>
+					<div class="nav-collapse collapse"><ul id="menu-main-navigation" class="nav">
+						<li class="m-manage">
+							<a href="/" title="Home"><i class="fa fa-home"></i></a>
+						</li>
+						<% @neighborhoods.each do |neighborhood| %>
+							<li id="nav-menu-item-" class="main-menu-item dropdown  
+							menu-item-depth-0 menu-item menu-item-type-post_type menu-item-object-page">
+							<li><%= link_to neighborhood.title, neighborhood_path(neighborhood) %></li>
+							</li>
+						<%end %>
+						
+						<li id="nav-menu-item-36" class="main-menu-item dropdown  
+						menu-item-depth-0 menu-item menu-item-type-post_type menu-item-object-page">
+							<%= link_to "Properties", locations_path %>
+						</li>
 </ul></div>					
 					                    
             </div>
