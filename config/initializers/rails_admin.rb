@@ -13,9 +13,29 @@ RailsAdmin.config do |config|
   config.main_app_name = Proc.new { |controller| [ "JET Listings", 
     "Backstage- #{controller.params[:action].try(:titleize)}" ] }
 
-  ## == Navigation ==
+
+  ## == Models ==
   config.model 'Location' do
+    # Navigation
     weight -1
+    # listing
+    list do
+      field :title do
+        label "Title"
+      end
+      field :street1 do
+        label "Street"
+      end
+      field :neighborhood do
+        label "Neighborhood"
+      end
+      field :city do
+        label "City"
+      end
+      field :created_at do
+        label "Created"
+      end
+    end
   end
   ## == HTTP Auth == 
   config.authorize_with do
