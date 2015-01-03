@@ -7,8 +7,8 @@
                     data-cycle-prev="#prev"
                     data-cycle-next="#next"
                 >
-				<% if @location.photos.size > 0 %>
-					<% @location.photos.each do |photo| %>
+				<% if @photos.size > 0 %>
+					<% @photos.each do |photo| %>
 					<%= image_tag photo.image.url, alt: "image", class: "media-object" %>
 					<% end %>
 				<% else %>

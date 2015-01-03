@@ -5,6 +5,7 @@ class LocationsController < ApplicationController
 
   def show
     @location = Location.find(params[:id])
+    @photos   = @location.photos.order(desirability: :desc)
     @amenities = @location.neighborhood.amenities
   end
 end
