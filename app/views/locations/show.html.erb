@@ -1,6 +1,44 @@
 <div class="container page-content">
     <div class="row">
-        <%= render :partial => 'photo_collection', object: @location %>
+        <div class="span8">
+            <div class="box-container">
+                              
+				<%= render :partial => 'photo_collection', object: @location %>
+				<div id="adv-custom-pager"></div>
+				
+	            <div class="clearfix">
+	                <div class="clearfix padding30">
+	                    <h2 class="prop-title pull-left margin0">
+							<%= "#{@location.title}, #{@location.city}, #{@location.state}" %></h2>
+	                    <!-- <span class="prop-price pull-right serif italic">$1,230/week</span> -->
+	                </div>
+					<div class="clearfix padding030 row-fluid">
+						<%= render :partial => "more_info", :object => @location %>
+					</div>
+	                <div class="clearfix padding030">
+	                    <h3>Property Description</h3>
+	                    <p><%= @location.description %></p>
+						<%= image_tag "/fallback/default.png" %>
+	                </div>
+                
+                                    
+	                <div class="span8">
+	                    <div class="margin300 additional_features">    
+	                        <h3>Additional Features</h3>
+	                        							<ul>
+							<% @location.features.each do |f| %>
+                            <li style="font-weight: bold;color: #363636 !important;"><%= f.title %></li>
+							<% end %>
+                            </ul>
+                                                
+	                    </div>
+                   
+	                </div><!-- span8 -->
+               
+	            </div>
+				
+            </div>
+        </div>
         <!-- .span8 -->
         
         <div class="span4">

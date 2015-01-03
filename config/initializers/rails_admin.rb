@@ -8,6 +8,36 @@ RailsAdmin.config do |config|
   # end
   # config.current_user_method(&:current_user)
   ## == Manual Auth ==
+
+  ## == Custom Labeling ==
+  config.main_app_name = Proc.new { |controller| [ "JET Listings", 
+    "Backstage- #{controller.params[:action].try(:titleize)}" ] }
+
+
+  ## == Models ==
+  config.model 'Location' do
+    # Navigation
+    weight -1
+    # listing
+    list do
+      field :title do
+        label "Title"
+      end
+      field :street1 do
+        label "Street"
+      end
+      field :neighborhood do
+        label "Neighborhood"
+      end
+      field :city do
+        label "City"
+      end
+      field :created_at do
+        label "Created"
+      end
+    end
+  end
+  ## == HTTP Auth == 
   config.authorize_with do
     authenticate_or_request_with_http_basic('Site Message') do |username, password|
       username == ENV['USERNAME'] && password == ENV['PASSWORD']
