@@ -10,6 +10,7 @@ class ApplicationController < ActionController::Base
   
   def init_neighborhood
     @neighborhoods = Neighborhood.all
+    @profile = Profile.first
   end
   
 end

@@ -160,7 +160,8 @@
         <div class="container">
             <div class="row">
                 <div class="span8">
-                    <a class="brand" href="/"><img src="https://s3.amazonaws.com/fog-demo-1419715807/images/logo.png" alt="" /></a>
+                    <a class="brand" href="/">
+						<i class="fa fa-suitcase"></i></a>
                     <span class="tag-line hidden-phone">Great Condos for Rent in Utah</span>
                 </div>
                 <div class="span4">
@@ -182,9 +183,10 @@
 <footer>
     <div class="container">
         <div class="row">
-            <div class="span3"><div class="footer-widget"><h2 class="brand widget-title">Realto</h2>			
+            <div class="span3"><div class="footer-widget"><h2 class="brand widget-title"><i class="fa fa-suitcase"></i>
+</h2>			
 			<p class="footer-tag-line">Great Utah Condos for Rent</p>
-            <p>Lorem ipsum dolor sit amet consectetur incididunt ut labore et dolore magna aliqua adipisicing elit seddo eiusmod tempor.</p>
+            <p>A great place to stay is just moments away.</p>
 	</div></div>
             <!-- .span3 -->
             <div class="span3"><div class="footer-widget"><h3 class="widget-title">Address</h3>			
@@ -192,13 +194,15 @@
                 <ul>
                     <li class="clearfix">
                         <i class="icon-map-marker pull-left"></i>
-                        <p class="pull-left">121 King Street, Melbourne VIC 3000</p></li>
+                        <p class="pull-left"><%= "#{@profile.street}, #{@profile.city} #{@profile.state} #{@profile.postal_code}" %></p></li>
                     <li class="clearfix">
                         <i class="icon-phone pull-left"></i>
                         <p class="pull-left">+1 (877) 987 3487</p></li>
                     <li class="clearfix">
                         <i class="icon-envelope-alt pull-left"></i>
-                        <p class="pull-left"><a href="mailto:hello@realto.com">hello@realto.com</a></p>
+                        <p class="pull-left">
+							<%= link_to @profile.email_address.to_s, "mailto:#{@profile.email_address}" %>
+						</p>
                     </li>
                 </ul>
             </div>
