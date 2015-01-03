@@ -197,7 +197,7 @@
                         <p class="pull-left"><%= "#{@profile.street}, #{@profile.city} #{@profile.state} #{@profile.postal_code}" %></p></li>
                     <li class="clearfix">
                         <i class="icon-phone pull-left"></i>
-                        <p class="pull-left">+1 (877) 987 3487</p></li>
+                        <p class="pull-left"><%= @profile.phone.to_s %></p></li>
                     <li class="clearfix">
                         <i class="icon-envelope-alt pull-left"></i>
                         <p class="pull-left">
