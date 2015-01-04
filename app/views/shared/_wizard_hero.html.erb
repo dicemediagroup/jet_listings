@@ -1,31 +1,241 @@
 <style type="text/css" media="screen">
-.hero-banner-wrap{background-color:#1f1f1f;position:relative;}.hero-banner-wrap .hero-banner-gradient{background:url('http://a.travel-assets.com/uitoolkit/2-23/e21aa506309b8228b41f53927f9cb4f63a7c96ed/core/images/hero-banner-vertical-gradient.png') repeat-x 0 0;}
-.hero-banner-wrap .hero-banner,.hero-banner-wrap .hero-banner:before{-webkit-transition:padding 0.25s cubic-bezier(0.23, 1, 0.32, 1) , background 0.5s cubic-bezier(0.23, 1, 0.32, 1);-moz-transition:padding 0.25s cubic-bezier(0.23, 1, 0.32, 1) , background 0.5s cubic-bezier(0.23, 1, 0.32, 1);-o-transition:padding 0.25s cubic-bezier(0.23, 1, 0.32, 1) , background 0.5s cubic-bezier(0.23, 1, 0.32, 1);transition:padding 0.25s cubic-bezier(0.23, 1, 0.32, 1) , background 0.5s cubic-bezier(0.23, 1, 0.32, 1);}
-.hero-banner-wrap .hero-banner{width:100%;margin:0 auto;position:relative;background-repeat:no-repeat;-webkit-background-size:100%;-moz-background-size:100%;-o-background-size:100%;-ms-background-size:100%;background-size:100%;background-position:50% 0;padding-top:15%;}.hero-banner-wrap .hero-banner:before{content:'';display:block;position:absolute;top:0;right:0;bottom:0;left:0;height:100%;width:100%;background-image:url('http://a.travel-assets.com/uitoolkit/2-23/e21aa506309b8228b41f53927f9cb4f63a7c96ed/core/images/hero-banner-secondary-vertical-gradient.png');background-repeat:repeat-x;-webkit-background-size:100%;-moz-background-size:100%;-o-background-size:100%;-ms-background-size:100%;background-size:100%;}
-.hero-banner-wrap .hero-banner .hero-banner-inner{padding-top:8.47058824em;padding-bottom:1.41176471em;padding-left:1.41176471em;position:relative;z-index:100;}
-.hero-banner-wrap .hero-banner .hero-banner-title{color:#ffffff;margin-bottom:0.35294118em;-webkit-transition:padding 0.25s cubic-bezier(0.23, 1, 0.32, 1);-moz-transition:padding 0.25s cubic-bezier(0.23, 1, 0.32, 1);-o-transition:padding 0.25s cubic-bezier(0.23, 1, 0.32, 1);transition:padding 0.25s cubic-bezier(0.23, 1, 0.32, 1);-ms-word-break:break-all;word-break:break-all;word-break:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;}
-.hero-banner-wrap .hero-banner .hero-banner-box{position:relative;padding:0;}.hero-banner-wrap .hero-banner .hero-banner-box .cols-nested{margin-left:-1.41176471em;}
-.hero-banner-wrap.condensed .hero-banner-gradient{background-position:50% -2%;}
-.hero-banner-wrap.condensed .hero-banner{padding-top:0;background-position:50% 0%;}.hero-banner-wrap.condensed .hero-banner:before{background-image:url('http://a.travel-assets.com/uitoolkit/2-23/e21aa506309b8228b41f53927f9cb4f63a7c96ed/core/images/hero-banner-condensed-vertical-gradient.png');filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.././images/hero-banner-condensed-vertical-gradient.png', sizingMethod='crop');}
-.hero-banner-wrap.condensed .hero-banner-inner{padding-top:8%;-webkit-transition:padding 0.25s cubic-bezier(0.23, 1, 0.32, 1);-moz-transition:padding 0.25s cubic-bezier(0.23, 1, 0.32, 1);-o-transition:padding 0.25s cubic-bezier(0.23, 1, 0.32, 1);transition:padding 0.25s cubic-bezier(0.23, 1, 0.32, 1);}
-.hero-banner-wrap.condensed .hero-banner-box{-webkit-border-radius:0.17647059em;-moz-border-radius:0.17647059em;-o-border-radius:0.17647059em;border-radius:0.17647059em;padding:1.41176471em;background:#ffffff;}
-.hero-banner-wrap.condensed .hero-banner-title{color:#004074;}
-.hero-banner-wrap.prototype .hero-banner{padding-top:0;}
-.hero-banner-wrap.prototype .hero-banner-title{color:#004074;}
-.hero-banner-wrap.prototype .hero-banner-inner{padding:1.41176471em;}
-.hero-banner-wrap.prototype .hero-banner-box{background:#ffffff;-webkit-border-radius:0.29411765em;-moz-border-radius:0.29411765em;-o-border-radius:0.29411765em;border-radius:0.29411765em;padding:1.41176471em;}
-.hero-banner-wrap.theme-inverse-hero .hero-banner-box{background-color:#000000;background-color:rgba(0, 0, 0, 0.75);color:#c7c7c7;-moz-box-shadow:0 0 0.8823em 0 rgba(0, 0, 0, 0.5);-webkit-box-shadow:0 0 0.8823em 0 rgba(0, 0, 0, 0.5);box-shadow:0 0 0.8823em 0 rgba(0, 0, 0, 0.5);}
-.hero-banner-wrap.theme-inverse-hero .hero-banner-title{color:#ffffff;}
-@media only screen and (max-width:37.5em){.hero-banner-wrap.condensed .hero-banner,.hero-banner-wrap.condensed .hero-banner:before{-webkit-background-size:150%;-moz-background-size:150%;-o-background-size:150%;-ms-background-size:150%;background-size:150%;} .hero-banner{background-color:transparent !important;}}@media only screen and (max-height:33.75em){.hero-banner-wrap .hero-banner,.hero-banner-wrap.condensed .hero-banner{padding-top:0;} .hero-banner-wrap .hero-banner .hero-banner-inner{padding-top:1.41176471em;-webkit-transition:padding 0.5s cubic-bezier(0.23, 1, 0.32, 1);-moz-transition:padding 0.5s cubic-bezier(0.23, 1, 0.32, 1);-o-transition:padding 0.5s cubic-bezier(0.23, 1, 0.32, 1);transition:padding 0.5s cubic-bezier(0.23, 1, 0.32, 1);}}.cc-input.text input{padding-left:4em;}.cc-input.text input+.icon{width:3.52941176em;padding-left:0.35294118em;text-decoration:none;}
+	.hero-banner-wrap
+	{
+		background-color:#1f1f1f;
+		position:relative;
+	}
+
+	.hero-banner-wrap .hero-banner-gradient
+	{
+	    background: none repeat scroll 0px center transparent;
+	        background-color: transparent;
+	        background-image: none;
+	        background-repeat: repeat;
+	        background-attachment: scroll;
+	        background-position: 0px center;
+	        background-clip: border-box;
+	        background-origin: padding-box;
+	        background-size: auto auto;
+		
+	}
+
+	.hero-banner-wrap .hero-banner,.hero-banner-wrap .hero-banner:before
+	{
+		-moz-transition:padding .25s cubic-bezier(0.23,1,0.32,1) , background .5s cubic-bezier(0.23,1,0.32,1);
+		-o-transition:padding .25s cubic-bezier(0.23,1,0.32,1) , background .5s cubic-bezier(0.23,1,0.32,1);
+		-webkit-transition:padding .25s cubic-bezier(0.23,1,0.32,1) , background .5s cubic-bezier(0.23,1,0.32,1);
+		transition:padding .25s cubic-bezier(0.23,1,0.32,1) , background .5s cubic-bezier(0.23,1,0.32,1);
+	}
+
+	.hero-banner-wrap .hero-banner
+	{
+		-moz-background-size:100%;
+		-ms-background-size:100%;
+		-o-background-size:100%;
+		-webkit-background-size:100%;
+		background-position:50% 0;
+		background-repeat:no-repeat;
+		background-size:100%;
+		margin:0 auto;
+		padding-top:15%;
+		position:relative;
+		width:100%;
+	}
+
+	.hero-banner-wrap .hero-banner:before
+	{
+		-moz-background-size:100%;
+		-ms-background-size:100%;
+		-o-background-size:100%;
+		-webkit-background-size:100%;
+		background-image:url(http://a.travel-assets.com/uitoolkit/2-23/e21aa506309b8228b41f53927f9cb4f63a7c96ed/core/images/hero-banner-secondary-vertical-gradient.png);
+		background-repeat:repeat-x;
+		background-size:100%;
+		bottom:0;
+		content:'';
+		display:block;
+		height:100%;
+		left:0;
+		position:absolute;
+		right:0;
+		top:0;
+		width:100%;
+	}
+
+	.hero-banner-wrap .hero-banner .hero-banner-inner
+	{
+		padding-bottom:1.41176471em;
+		padding-left:1.41176471em;
+		padding-top:8.47058824em;
+		position:relative;
+		z-index:100;
+	}
+
+	.hero-banner-wrap .hero-banner .hero-banner-title
+	{
+		-moz-hyphens:auto;
+		-moz-transition:padding .25s cubic-bezier(0.23,1,0.32,1);
+		-ms-word-break:break-all;
+		-o-transition:padding .25s cubic-bezier(0.23,1,0.32,1);
+		-webkit-hyphens:auto;
+		-webkit-transition:padding .25s cubic-bezier(0.23,1,0.32,1);
+		color:#fff;
+		hyphens:auto;
+		margin-bottom:.35294118em;
+		transition:padding .25s cubic-bezier(0.23,1,0.32,1);
+		word-break:break-word;
+	}
+
+	.hero-banner-wrap .hero-banner .hero-banner-box
+	{
+		padding:0;
+		position:relative;
+	}
+
+	.hero-banner-wrap .hero-banner .hero-banner-box .cols-nested
+	{
+		margin-left:-1.41176471em;
+	}
+
+	.hero-banner-wrap.condensed .hero-banner-gradient
+	{
+		background-position:50% -2%;
+	}
+
+	.hero-banner-wrap.condensed .hero-banner
+	{
+		background-position:50% 0;
+		padding-top:0;
+	}
+
+	.hero-banner-wrap.condensed .hero-banner:before
+	{
+		background-image:url(http://a.travel-assets.com/uitoolkit/2-23/e21aa506309b8228b41f53927f9cb4f63a7c96ed/core/images/hero-banner-condensed-vertical-gradient.png);
+		filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://a.travel-assets.com/uitoolkit/2-23/e21aa506309b8228b41f53927f9cb4f63a7c96ed/core/images/hero-banner-condensed-vertical-gradient.png',sizingMethod='crop');
+	}
+
+	.hero-banner-wrap.condensed .hero-banner-inner
+	{
+		-moz-transition:padding .25s cubic-bezier(0.23,1,0.32,1);
+		-o-transition:padding .25s cubic-bezier(0.23,1,0.32,1);
+		-webkit-transition:padding .25s cubic-bezier(0.23,1,0.32,1);
+		padding-top:8%;
+		transition:padding .25s cubic-bezier(0.23,1,0.32,1);
+	}
+
+	.hero-banner-wrap.condensed .hero-banner-box
+	{
+		-moz-border-radius:.17647059em;
+		-o-border-radius:.17647059em;
+		-webkit-border-radius:.17647059em;
+		background:#fff;
+		border-radius:.17647059em;
+		padding:1.41176471em;
+	}
+
+	.hero-banner-wrap.condensed .hero-banner-title
+	{
+		color:#004074;
+	}
+
+	.hero-banner-wrap.prototype .hero-banner
+	{
+		padding-top:0;
+	}
+
+	.hero-banner-wrap.prototype .hero-banner-title
+	{
+		color:#004074;
+	}
+
+	.hero-banner-wrap.prototype .hero-banner-inner
+	{
+		padding:1.41176471em;
+	}
+
+	.hero-banner-wrap.prototype .hero-banner-box
+	{
+		-moz-border-radius:.29411765em;
+		-o-border-radius:.29411765em;
+		-webkit-border-radius:.29411765em;
+		background:#fff;
+		border-radius:.29411765em;
+		padding:1.41176471em;
+	}
+
+	.hero-banner-wrap.theme-inverse-hero .hero-banner-box
+	{
+		-moz-box-shadow:0 0 .8823em 0 rgba(0,0,0,0.5);
+		-webkit-box-shadow:0 0 .8823em 0 rgba(0,0,0,0.5);
+		background-color:rgba(0,0,0,0.75);
+		box-shadow:0 0 .8823em 0 rgba(0,0,0,0.5);
+		color:#c7c7c7;
+	}
+
+	.hero-banner-wrap.theme-inverse-hero .hero-banner-title
+	{
+		color:#fff;
+	}
+
+	.cc-input.text input
+	{
+		padding-left:4em;
+	}
+
+	.cc-input.text input+.icon
+	{
+		padding-left:.35294118em;
+		text-decoration:none;
+		width:3.52941176em;
+	}
+
+	.search-wrapper {
+		boder-bottom: 2px solid #EAEAEA;
+		background: none repeat scroll 0px center transparent;
+		color: blue;border-botom-color: 2px solid #EAEAEA transparent
+	}
+	@media only screen and max-width375em {
+		.hero-banner-wrap.condensed .hero-banner,.hero-banner-wrap.condensed .hero-banner:before
+		{
+			-moz-background-size:150%;
+			-ms-background-size:150%;
+			-o-background-size:150%;
+			-webkit-background-size:150%;
+			background-size:150%;
+		}
 	
+		.hero-banner
+		{
+			background-color:transparent!important;
+		}
+	}
+
+	@media only screen and max-height3375em {
+		.hero-banner-wrap .hero-banner,.hero-banner-wrap.condensed .hero-banner
+		{
+			padding-top:0;
+		}
+	
+		.hero-banner-wrap .hero-banner .hero-banner-inner
+		{
+			-moz-transition:padding .5s cubic-bezier(0.23,1,0.32,1);
+			-o-transition:padding .5s cubic-bezier(0.23,1,0.32,1);
+			-webkit-transition:padding .5s cubic-bezier(0.23,1,0.32,1);
+			padding-top:1.41176471em;
+			transition:padding .5s cubic-bezier(0.23,1,0.32,1);
+		}
+	}	
+	.search-wrapper {
+		border-bottom: 2px transparent #EAEAEA;
+	}
 </style>
 
 <section id="WizardHero" class="hero-banner-wrap background d-col-ads core-wizard-loaded">
-    <div data-src="http://pagead2.googlesyndication.com/pagead/imgad?id=CICAgKDjna2UmAEQARgBMgigbpxwmcPACA" class="hero-banner background" style="background-image: url(&quot;http://pagead2.googlesyndication.com/pagead/imgad?id=CICAgKDjna2UmAEQARgBMgigbpxwmcPACA&quot;);">
+    <div data-src="https://fog-demo-1419715807.s3.amazonaws.com/images/gateway_nighttime.jpg" class="hero-banner background" style="background-image: url(&quot;https://fog-demo-1419715807.s3.amazonaws.com/images/gateway_nighttime.jpg&quot;);">
         <div class="hero-banner-gradient"><div class="cols-row hero-banner-inner">
             <div class="hero-banner-box cf">
-			    <div class="search-wrapper">
-			    		<h2 class="post-title">Request a Quote</h2>
+			    <div class="search-wrapper" >
+			    		<h2 class="post-title" style="color: white">Request a Quote</h2>
 				    <%= render :partial => '/shared/quote_request_form' %>
 			    </div><!-- .search-wrapper -->
 				
