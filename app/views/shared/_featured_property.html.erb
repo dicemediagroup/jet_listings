@@ -1,34 +1,38 @@
 <li class="span4 box-container">
     <div class="holder">
-        
-											
-    <a class="overlay" href="http://demo.favethemes.com/wp/realto/property/199-s-beacon-st-san-pedro-ca-90731/" title="199 S Beacon St, San Pedro, CA 90731">
+
+	<%= link_to(featured_property) do %>
+		
         <span class="more">
             <i class="icon-zoom-in"></i>
         </span>
                 	<!-- <span class="prop-price-tag">$1,230/week</span> -->
-                            <img width="800" height="454" src="http://demo.favethemes.com/wp/realto/wp-content/uploads/2014/02/Fantastic-Fendi-Villa-in-Miami-Beach-Florida-17-800x454.jpg" class="attachment-property-regular wp-post-image" alt="Fantastic-Fendi-Villa-in-Miami-Beach-Florida-17" />            </a>
+					<% if featured_property.photos.count > 0 %>
+						<%= image_tag featured_property.photos.order(desirability: :desc)[0].image_url.to_s, 
+						alt: "image", 
+						width: "800", height: "454",
+						class: "attachment-property-regular wp-post-image" %>
+						
+					<% else %>
+						<%= image_tag "fallback/default.png" %>
+					<% end %>
+
+		<% end %>
         
         
-        <span class="prop-tag">
-											For Rent                                        </span>
+        <span class="prop-tag">For Rent</span>
         <div class="prop-info">
-            <h3 class="prop-title"><%= featured_property.title.to_s||"broken" %></h3>
+            <h3 class="prop-title"><%= featured_property.title.to_s %></h3>
             <ul class="more-info clearfix">
 												    <li class="info-label clearfix">
         <span class="pull-left">Bedrooms</span>
-        <span class="qty pull-right">2 </span>
+        <span class="qty pull-right"><%= featured_property.bed %> </span>
     </li>
             <li class="info-label clearfix">
         <span class="pull-left">Bathrooms</span>
-        <span class="qty pull-right">2 </span>
+        <span class="qty pull-right"><%= featured_property.bath %> </span>
    </li>
-      
-      
-      
-      
-         
-                        </ul>
+</ul>
         </div>
     </div>
 </li>
