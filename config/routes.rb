@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :quote_requests
+
   get 'neighborhoods/index'
 
   get 'neighborhoods/show'
