@@ -1,28 +1,283 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
-  </head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Short Term Condo Rental Listings</title>
+ 
+<!--rails stuff -->
+	
+    <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="mWQTJb+agx+OjrDu6Md8OaRuuF1V7tNG1a/r2Y/o+RU+7C59pWskM4qUVwZpfohogSOBijwWap2UgOkQASNYjg==">
+	
+<!-- -->
+        <!-- Favicon and touch icons  -->
+    <link href="http://demo.favethemes.com/wp/realto/wp-content/themes/realto/ico/apple-touch-icon-144-precomposed.png" rel="apple-touch-icon-precomposed" sizes="144x144">
+    <link href="http://demo.favethemes.com/wp/realto/wp-content/themes/realto/ico/favicon.png" rel="shortcut icon">
+
+	<!--[if lt IE 9]>
+	<script src="http://demo.favethemes.com/wp/realto/wp-content/themes/realto/js/html5.js"></script>
+	<![endif]-->
+    <script src="//www.google-analytics.com/analytics.js" async=""></script><script style="" src="http://maps.google.com/maps/api/js?sensor=true" type="text/javascript"></script><script src="http://maps.gstatic.com/maps-api-v3/api/js/19/5/main.js"></script>
+	<link rel="alternate" type="application/rss+xml" title="Realto » Feed" href="http://demo.favethemes.com/wp/realto/feed/">
+<link rel="alternate" type="application/rss+xml" title="Realto » Comments Feed" href="http://demo.favethemes.com/wp/realto/comments/feed/">
+<link rel="stylesheet" id="dsidxpress-unconditional-css" href="http://demo.favethemes.com/wp/realto/wp-content/plugins/dsidxpress/css/client.css?ver=4.0.1" type="text/css" media="all">
+<link rel="stylesheet" id="dsidxwidgets-unconditional-css" href="http://demo.favethemes.com/wp/realto/wp-content/plugins/dsidxpress/dsidxwidgets/css/client.css?ver=4.0.1" type="text/css" media="all">
+<link rel="stylesheet" id="rs-plugin-settings-css" href="http://demo.favethemes.com/wp/realto/wp-content/plugins/revslider/rs-plugin/css/settings.css?ver=4.6.5" type="text/css" media="all">
+<link rel="stylesheet" id="nt-bootstrap-css" href="http://demo.favethemes.com/wp/realto/wp-content/themes/realto/css/bootstrap.css?ver=1" type="text/css" media="all">
+<link rel="stylesheet" id="nt-bootstrap-responsive-css" href="http://demo.favethemes.com/wp/realto/wp-content/themes/realto/css/bootstrap-responsive.css?ver=1" type="text/css" media="all">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" id="nt-colors-css" href="http://demo.favethemes.com/wp/realto/wp-content/themes/realto/css/colors.css?ver=1" type="text/css" media="all">
+<link rel="stylesheet" id="style-css" href="https://fog-demo-1419715807.s3.amazonaws.com/wp-content/themes/realto/css/realty.css" type="text/css" media="all">
+<script type="text/javascript" src="http://demo.favethemes.com/wp/realto/wp-includes/js/jquery/jquery.js?ver=1.11.1"></script>
+<script type="text/javascript" src="http://demo.favethemes.com/wp/realto/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1"></script>
+<script type="text/javascript" src="http://demo.favethemes.com/wp/realto/wp-content/plugins/revslider/rs-plugin/js/jquery.themepunch.tools.min.js?ver=4.6.5"></script>
+<script type="text/javascript" src="http://demo.favethemes.com/wp/realto/wp-content/plugins/revslider/rs-plugin/js/jquery.themepunch.revolution.min.js?ver=4.6.5"></script>
+<script type="text/javascript" src="http://demo.favethemes.com/wp/realto/wp-content/themes/realto/js/jquery.gomap-1.3.2.min.js?ver=20140203"></script><script src="http://maps.gstatic.com/maps-api-v3/api/js/19/5/common.js" charset="UTF-8" type="text/javascript"></script><script src="http://maps.gstatic.com/maps-api-v3/api/js/19/5/util.js" charset="UTF-8" type="text/javascript"></script><script src="http://maps.gstatic.com/maps-api-v3/api/js/19/5/geocoder.js" charset="UTF-8" type="text/javascript"></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://demo.favethemes.com/wp/realto/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://demo.favethemes.com/wp/realto/wp-includes/wlwmanifest.xml"> 
+<link rel="prev" title="1198 Museum Mile, New York, NY 10029" href="http://demo.favethemes.com/wp/realto/property/1198-museum-mile-new-york-ny-10029/">
+<meta name="generator" content="WordPress 4.0.1">
+<link rel="canonical" href="http://demo.favethemes.com/wp/realto/property/872-5th-ave-new-york-ny-10037/">
+<link rel="shortlink" href="http://demo.favethemes.com/wp/realto/?p=185">
+		<script type="text/javascript">
+			jQuery(document).ready(function() {
+				// CUSTOM AJAX CONTENT LOADING FUNCTION
+				var ajaxRevslider = function(obj) {
+				
+					// obj.type : Post Type
+					// obj.id : ID of Content to Load
+					// obj.aspectratio : The Aspect Ratio of the Container / Media
+					// obj.selector : The Container Selector where the Content of Ajax will be injected. It is done via the Essential Grid on Return of Content
+					
+					var content = "";
+
+					data = {};
+					
+					data.action = 'revslider_ajax_call_front';
+					data.client_action = 'get_slider_html';
+					data.token = '02f04d3fc3';
+					data.type = obj.type;
+					data.id = obj.id;
+					data.aspectratio = obj.aspectratio;
+					
+					// SYNC AJAX REQUEST
+					jQuery.ajax({
+						type:"post",
+						url:"http://demo.favethemes.com/wp/realto/wp-admin/admin-ajax.php",
+						dataType: 'json',
+						data:data,
+						async:false,
+						success: function(ret, textStatus, XMLHttpRequest) {
+							if(ret.success == true)
+								content = ret.data;								
+						},
+						error: function(e) {
+							console.log(e);
+						}
+					});
+					
+					 // FIRST RETURN THE CONTENT WHEN IT IS LOADED !!
+					 return content;						 
+				};
+				
+				// CUSTOM AJAX FUNCTION TO REMOVE THE SLIDER
+				var ajaxRemoveRevslider = function(obj) {
+					return jQuery(obj.selector+" .rev_slider").revkill();
+				};
+
+				// EXTEND THE AJAX CONTENT LOADING TYPES WITH TYPE AND FUNCTION
+				var extendessential = setInterval(function() {
+					if (jQuery.fn.tpessential != undefined) {
+						clearInterval(extendessential);
+						if(typeof(jQuery.fn.tpessential.defaults) !== 'undefined') {
+							jQuery.fn.tpessential.defaults.ajaxTypes.push({type:"revslider",func:ajaxRevslider,killfunc:ajaxRemoveRevslider,openAnimationSpeed:0.3});   
+							// type:  Name of the Post to load via Ajax into the Essential Grid Ajax Container
+							// func: the Function Name which is Called once the Item with the Post Type has been clicked
+							// killfunc: function to kill in case the Ajax Window going to be removed (before Remove function !
+							// openAnimationSpeed: how quick the Ajax Content window should be animated (default is 0.3)
+						}
+					}
+				},30);
+			});
+		</script>
+		<style type="text/css">
+
+#home-search-container {
+    background: url(http://demo.favethemes.com/wp/realto/wp-content/uploads/2014/02/bg1.jpg) no-repeat scroll center center rgba(0, 0, 0, 0);
+	background-size:100% auto;
+}
+
+
+</style>
+	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+<script src="http://maps.gstatic.com/maps-api-v3/api/js/19/5/stats.js" charset="UTF-8" type="text/javascript"></script>  </head>
   <body>
-    <h1>Latest Quote Request</h1>
-      You have a new quote request. Here ae the particulars:
-	  <table border="0" cellspacing="5" cellpadding="5">
-	  	<tr>
-			<th>Full Name</th>
-			<th>Email Address</th>
-			<th>Monthly Rent</th>
-		</tr>
-	  	<tr>
-			<td><%= @quote_request.full_name %></td>
-			<td><%= @quote_request.email_address %></td>
-			<td><%= @quote_request.monthly_rent %></td>
-			<tr><th>Beds</th><th>Bathrooms</th></tr>
-	  	<tr><td><%= @quote_request.beds %></td>
-			<td><%= @quote_request.baths %></td></tr>
-	  	<tr><th>Starting</th><th>Ending</th></tr>
-	  	<tr><td><%= @quote_request.start_date %></td>
-			<td><%= @quote_request.end_date %></td></tr>
-	  </table>
-    <p>Thanks for using JET Listings, and good luck!</p>
-  </body>
-</html>
+
+<!-- -->
+
+<!-- begin header -->
+<header>
+    <div class="navbar navbar-inverse navbar-static-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <button class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse" type="button">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!--<div class="nav-collapse collapse">-->
+                						
+					<div class="nav-collapse collapse"><ul id="menu-main-navigation" class="nav">
+						<li class="m-manage">
+							<a href="/" title="Home"><i class="fa fa-home"></i></a>
+						</li>
+							<li id="nav-menu-item-" class="main-menu-item dropdown  
+							menu-item-depth-0 menu-item menu-item-type-post_type menu-item-object-page">
+							</li><li><a href="/neighborhoods/1">Parc Gateway</a></li>
+							
+						
+						<li id="nav-menu-item-36" class="main-menu-item dropdown  
+						menu-item-depth-0 menu-item menu-item-type-post_type menu-item-object-page">
+							<a href="/locations">Properties</a>
+						</li>
+</ul></div>					
+					                    
+            </div>
+        </div>
+    </div>
+    <div id="logo-container">
+        <div class="container">
+            <div class="row">
+                <div class="span8">
+                    <a class="brand" href="/">
+						<i class="fa fa-suitcase"></i></a>
+                    <span class="tag-line hidden-phone">Great Condos for Rent in Utah</span>
+                </div>
+                <div class="span4">
+                                        <div class="phone-number pull-right">
+                    	<i class="fa fa-phone"></i> 
+							Call Us: 
+                            <strong>801-644-2440</strong>
+                       </div><!--/phone-number-->
+                                     </div>
+            </div>
+        </div>
+    </div>
+    <!-- #logo-container -->
+</header>  
+<!-- end header -->
+
+    <p id="notice">Latest Quote Request</p>
+    <h1></h1>
+
+<p>
+  <strong>Full name:</strong>
+  <%= @quote_request.full_name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @quote_request.email_address %>
+</p>
+
+<p>
+  <strong>Monthly rent:</strong>
+  <%= @quote_request.monthly_rent %>
+</p>
+
+<p>
+  <strong>Beds:</strong>
+  <%= @quote_request.beds %>
+</p>
+
+<p>
+  <strong>Baths:</strong>
+  <%= @quote_request.baths %>
+</p>
+
+<p>
+  <strong>Start date:</strong>
+  <%= @quote_request.start_date %>
+</p>
+
+<p>
+  <strong>End date:</strong>
+  <%= @quote_request.end_date %>
+</p>
+
+<!-- begin footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="span3"><div class="footer-widget"><h2 class="brand widget-title"><i class="fa fa-suitcase"></i>
+</h2>			
+			<p class="footer-tag-line">Great Utah Condos for Rent</p>
+            <p>A great place to stay is just moments away.</p>
+	</div></div>
+            <!-- .span3 -->
+            <div class="span3"><div class="footer-widget"><h3 class="widget-title">Address</h3>			
+			<div class="clearfix">
+                <ul>
+                    <li class="clearfix">
+                        <i class="icon-map-marker pull-left"></i>
+                        <p class="pull-left">40 N State Street, Salt Lake City UT </p></li>
+                    <li class="clearfix">
+                        <i class="icon-phone pull-left"></i>
+                        <p class="pull-left">801-244-6440</p></li>
+                    <li class="clearfix">
+                        <i class="icon-envelope-alt pull-left"></i>
+                        <p class="pull-left">
+							<a href="mailto:jetenterprises@me.com">jetenterprises@me.com</a>
+						</p>
+                    </li>
+                </ul>
+            </div>
+            <!-- .clearfix -->
+	</div></div>
+            <!-- .span3 -->
+            <div class="span3"><div class="footer-widget">
+				<h3 class="widget-title">Company</h3>
+				<div class="menu-footer-menu-container">
+					<ul id="menu-footer-menu" class="menu">
+						<li class="m-manage"><a href="/" title="Home"><i class="fa fa-home"></i>
+</a></li>
+						<li id="menu-item-159" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-159">
+							<a href="/"><i class="icon-caret-right"></i>Homepage</a>
+						</li>
+							<li id="footer-menu-item-" class="menu-item menu-item-type-post_type 
+							menu-item-object-page">
+							</li><li><a href="/neighborhoods/1">Parc Gateway</a></li>
+							
+						
+						<li id="footer-menu-item-36" class="menu-item menu-item-type-post_type 
+							menu-item-object-page">
+							<a href="/locations"><i class="icon-caret-right"></i>Properties</a>
+						</li>
+
+</ul></div></div></div>
+            <!-- .span3 -->
+            <div class="span3"><div class="footer-widget"><h3 class="widget-title">Flickr</h3><p>Coming Soon!</p></div></div>
+            
+            <!-- .span3 -->
+        </div>
+    </div>
+</footer>
+<!-- end footer -->
+		
+
+	<script type="text/javascript" src="https://s3.amazonaws.com/fog-demo-1419715807/wp-content/themes/realto/js/bootstrap.min.js?ver=1"></script>
+<script type="text/javascript" src="https://s3.amazonaws.com/fog-demo-1419715807/wp-content/themes/realto/js/jquery.placeholder.js?ver=2.0.7"></script>
+<script type="text/javascript" src="https://s3.amazonaws.com/fog-demo-1419715807/wp-content/themes/realto/js/jquery.cycle2.min.js?ver=1"></script>
+<script type="text/javascript" src="https://s3.amazonaws.com/fog-demo-1419715807/wp-content/themes/realto/js/custom.js?ver=1"></script>
+<script type="text/javascript">
+ (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-52341909-3', 'auto');
+  ga('send', 'pageview');
+</script>
+
