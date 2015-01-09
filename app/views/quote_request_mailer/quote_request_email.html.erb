@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Latest Quote Request</h1>
+      You have a new quote request. Here ae the particulars:
+	  <table border="0" cellspacing="5" cellpadding="5">
+	  	<tr>
+			<th>Full Name</th>
+			<th>Email Address</th>
+			<th>Monthly Rent</th>
+		</tr>
+	  	<tr>
+			<td><%= @quote_request.full_name %></td>
+			<td><%= @quote_request.email_address %></td>
+			<td><%= @quote_request.monthly_rent %></td>
+			<tr><th>Beds</th><th>Bathrooms</th></tr>
+	  	<tr><td><%= @quote_request.beds %></td>
+			<td><%= @quote_request.baths %></td></tr>
+	  	<tr><th>Starting</th><th>Ending</th></tr>
+	  	<tr><td><%= @quote_request.start_date %></td>
+			<td><%= @quote_request.end_date %></td></tr>
+	  </table>
+    <p>Thanks for using JET Listings, and good luck!</p>
+  </body>
+</html>
