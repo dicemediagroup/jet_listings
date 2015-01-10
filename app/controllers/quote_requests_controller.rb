@@ -1,24 +1,9 @@
 class QuoteRequestsController < ApplicationController
   before_action :set_quote_request, only: [:show, :edit, :update, :destroy]
 
-  # GET /quote_requests
-  # GET /quote_requests.json
-  def index
-    @quote_requests = QuoteRequest.all
-  end
-
-  # GET /quote_requests/1
-  # GET /quote_requests/1.json
-  def show
-  end
-
   # GET /quote_requests/new
   def new
     @quote_request = QuoteRequest.new
-  end
-
-  # GET /quote_requests/1/edit
-  def edit
   end
 
   # POST /quote_requests
@@ -28,7 +13,7 @@ class QuoteRequestsController < ApplicationController
 
     respond_to do |format|
       if @quote_request.save
-        format.html { redirect_to @quote_request, notice: 'Quote request was successfully created.' }
+        format.html { redirect_to "/", notice: 'Your request was successfully sent.' }
         format.json { render :show, status: :created, location: @quote_request }
         QuoteRequestMailer.quote_request_email(@quote_request).deliver
         
@@ -39,29 +24,6 @@ class QuoteRequestsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /quote_requests/1
-  # PATCH/PUT /quote_requests/1.json
-  def update
-    respond_to do |format|
-      if @quote_request.update(quote_request_params)
-        format.html { redirect_to @quote_request, notice: 'Quote request was successfully updated.' }
-        format.json { render :show, status: :ok, location: @quote_request }
-      else
-        format.html { render :edit }
-        format.json { render json: @quote_request.errors, status: :unprocessable_entity }
-      end
-    end
-  end
-
-  # DELETE /quote_requests/1
-  # DELETE /quote_requests/1.json
-  def destroy
-    @quote_request.destroy
-    respond_to do |format|
-      format.html { redirect_to quote_requests_url, notice: 'Quote request was successfully destroyed.' }
-      format.json { head :no_content }
-    end
-  end
 
   private
     # Use callbacks to share common setup or constraints between actions.
@@ -71,6 +33,6 @@ class QuoteRequestsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def quote_request_params
-      params.require(:quote_request).permit(:full_name, :email_address, :monthly_rent, :beds, :baths, :start_date, :end_date)
+      params.require(:quote_request).permit(:full_name, :email_address, :monthly_rent, :beds, :baths, :start_date, :end_date, :more_info)
     end
 end

@@ -12,11 +12,24 @@
             </ul>
         </div>
     </div>
-                    <form method="post" action="http://demo.favethemes.com/wp/realto/property/199-s-beacon-st-san-pedro-ca-90731/">
-    <input type="hidden" name="submitted" id="submitted" value="true" />   
-        <input class="input-block-level" name="sender_name" required="required" type="text" placeholder="Your name">
-        <input class="input-block-level" required="required" name="sender_email" type="email" placeholder="Your email">
+	
+	<%= form_for(@quote_request) do |f| %>
+	  <% if @quote_request.errors.any? %>
+	    <div id="error_explanation">
+	      <h2><%= pluralize(@quote_request.errors.count, "error") %> prohibited this quote_request from being saved:</h2>
+
+	      <ul>
+	      <% @quote_request.errors.full_messages.each do |message| %>
+	        <li><%= message %></li>
+	      <% end %>
+	      </ul>
+	    </div>
+	  <% end %>
+		<%= f.text_field :full_name, placeholder: "Your Name",  required: "required", class: "input-block-level", tabindex: 1 %>
+		
+ 		<%= f.text_field :full_name, placeholder: "Your Email",  required: "required", class: "input-block-level", tabindex: 2 %>
         <textarea class="input-block-level" name="sender_msg" required="required" rows="5">Hello, I'm interested in [<%= "#{@location.title}, #{@location.city}, #{@location.state}" %>]</textarea>
         <button type="submit" class="btn btn-realto">Contact Agent</button>
-    </form>
+	  
+	<% end %>
 </div>

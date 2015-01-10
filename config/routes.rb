@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :quote_requests
+  resources :quote_requests, only: [:new, :create]
 
   get 'neighborhoods/index'
 

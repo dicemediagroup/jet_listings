@@ -6,5 +6,6 @@ class NeighborhoodsController < ApplicationController
   def show
     @neighborhood = Neighborhood.find(params[:id])
     @locations = @neighborhood.locations
+    @quote_request = QuoteRequest.new
   end
 end

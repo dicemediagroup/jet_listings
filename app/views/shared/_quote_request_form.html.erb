@@ -1,76 +1,72 @@
-<form action="http://demo.favethemes.com/wp/realto/property/" method="get">
-    <input name="post_type" value="property" type="hidden">
+<%= form_for(@quote_request) do |f| %>
+  <% if @quote_request.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@quote_request.errors.count, "error") %> prohibited this quote_request from being saved:</h2>
+
+      <ul>
+      <% @quote_request.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
         
         <div class="row-fluid">
             <div class="span5">
-                <input class="input-block-level" name="search_keyword" value="" placeholder="Full Name" type="text">
+				<%= f.text_field :full_name, placeholder: "Full Name", class: "input-block-level", tabindex: 1 %>
             </div>
             <div class="span4">
-                <input class="input-block-level" name="search_keyword" value="" placeholder="Email" type="text">
+				<%= f.text_field :email_address, placeholder: "Email", class: "input-block-level", tabindex: 2 %>
+				
             </div>
             <div class="span2 hidden-phone">
-                <input class="btn input-block-level btn-realto-form" value="Request Quote" type="submit">
+				<%= f.submit "Request Quote", class: "btn input-block-level btn-realto-form", tabindex: 8 %>
             </div>
         </div>
                 
        
         <div class="row-fluid">
            
-            <div class="span3">
-                <select class="input-block-level select" name="property_type">
-                    <option value="">Monthly Rent</option>
-                    <option value="Unsure - Leave Notes">Unsure - Leave Notes</option>
-                    <option value="$1800 to $2399">$1800 to $2399</option>
-                    <option value="$2400 to $2899">$2400 to $2899</option>
-                    <option value="$2900 to $3499">$2900 to $3499</option>
-                    <option value="$3500 to $3999">$3500 to $3999</option>
-                    <option value="$4000 to $4499">$4000 to $4499</option>
-                    <option value="$4500 to $4999">$4500 to $4999</option>
-                </select>
+            <div class="span2">
+			   						   <%= select("quote_request", "monthly_rent", ["$1800 to $2399", "$2400 to $2899", "$2400 to $2899", "$2900 to $3499", "$4000 to $4499", "$4500 to $4999"], 
+									   {prompt: 'Monthly Rent'}, 
+									   class:"input-block-level select", tabindex: 3) 
+			    %>
             </div>
                     
                   
-            <div class="span2">
-                <select class="input-block-level select" name="beds">
-                    <option value="">Beds</option>
-                    <option value="1">1+ Beds</option>
-                    <option value="2">2+ Beds</option>
-                    <option value="3">3+ Beds</option>
-                    <option value="4">4+ Beds</option>
-                    <option value="5">5+ Beds</option>
-                    <option value="6">6+ Beds</option>
-                </select>
+            <div class="span1">
+			   						   <%= select("quote_request", "beds", %w[1 2 3 4 5 6], 
+									   {prompt: 'Beds'}, 
+									   class:"input-block-level select", tabindex: 4) 
+			    %>
             </div>
             
            
-                       <div class="span2">
-                <select class="input-block-level select" name="baths">
-                    <option value="">Baths</option>
-                    <option value="1">1+ Baths</option>
-                    <option value="2">2+ Baths</option>
-                    <option value="3">3+ Baths</option>
-                    <option value="4">4+ Baths</option>
-                    <option value="5">5+ Baths</option>
-                    <option value="6">6+ Baths</option>
-                </select>
+                       <div class="span1">
+						   <%= select("quote_request", "baths", %w[1 2 3 4 5 6], 
+						   {prompt: 'Bath'}, 
+						   class:"input-block-level select", tabindex: 5)
+ %>
             </div>
             
            
             <div class="span2">
-                <input class="input-block-level select" name="min-price" value="" placeholder="Start Date" type="text">
+			    <%= f.date_select :start_date, {prompt: 'Starting'}, 
+						   class:"input-block-level select", tabindex: 6 %>
+				
             </div>
                       
             
             <div class="span2">
-                <input class="input-block-level select" name="max-price" value="" placeholder="End Date" type="text">
+			    <%= f.date_select :end_date, {prompt: 'Ending'}, 
+						   class:"input-block-level select", tabindex: 7 %>
+				
             </div>
                         
             <div class="row-fluid visible-phone">
-                <div class="span2">
-                    <input class="btn input-block-level btn-realto-form" value="Search" type="submit">
-                </div>
             </div>
             
         </div>
             				
-    </form>
+<% end %>
