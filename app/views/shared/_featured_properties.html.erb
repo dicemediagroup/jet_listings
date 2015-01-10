@@ -1,0 +1,42 @@
+    <div id="latest-properties">
+        <div class="container">
+            <div class="row">
+                <div class="span12">
+                    <h2 class="secion-title">Properties</h2>
+                </div>
+            </div>
+            
+            <!-- Begin Carousel -->
+            <div class="row">
+                <div id="realto-carousel" class="carousel slide span12">
+                    <div class="carousel-navigation pull-right">
+						<%= link_to "View All", locations_path, class: "serif italic pull-left view-all-carousel" %>
+                        <a class="left carousel-control pull-left" href="#realto-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+                        <a class="right carousel-control pull-right" href="#realto-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a>
+                    </div>
+                    <div class="carousel-inner">
+						<div class="item active">
+                            <ul class="thumbnails">
+								<% @locations_first_three.each do |location| %>
+									<%= render :partial => '/shared/featured_property', object: location  %>
+								<% end %>
+									
+                            </ul>
+                        </div><!-- .item -->
+						<% @locations.each do |collection_of_locations| %>
+						<div class="item ">
+                            <ul class="thumbnails">
+						        <% collection_of_locations.each do |location| %>
+								
+									<%= render :partial => '/shared/featured_property', object: location %>
+								
+								<% end %>
+                            </ul>
+                        </div><!-- .item -->
+						<% end %>
+                    </div><!-- .carousel-inner -->
+                </div>
+            </div><!--End Carousel-->
+            
+        </div><!-- .container  -->
+    </div><!-- #latest-properties  -->

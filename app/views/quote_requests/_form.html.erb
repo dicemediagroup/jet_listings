@@ -1,0 +1,45 @@
+<%= form_for(@quote_request) do |f| %>
+  <% if @quote_request.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@quote_request.errors.count, "error") %> prohibited this quote_request from being saved:</h2>
+
+      <ul>
+      <% @quote_request.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :full_name %><br>
+    <%= f.text_field :full_name %>
+  </div>
+  <div class="field">
+    <%= f.label :email_address %><br>
+    <%= f.text_field :email_address %>
+  </div>
+  <div class="field">
+    <%= f.label :monthly_rent %><br>
+    <%= f.text_field :monthly_rent %>
+  </div>
+  <div class="field">
+    <%= f.label :beds %><br>
+    <%= f.text_field :beds %>
+  </div>
+  <div class="field">
+    <%= f.label :baths %><br>
+    <%= f.text_field :baths %>
+  </div>
+  <div class="field">
+    <%= f.label :start_date %><br>
+    <%= f.date_select :start_date %>
+  </div>
+  <div class="field">
+    <%= f.label :end_date %><br>
+    <%= f.date_select :end_date %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

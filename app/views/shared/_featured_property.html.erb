@@ -1,0 +1,38 @@
+<li class="span4 box-container">
+    <div class="holder">
+
+	<%= link_to(featured_property) do %>
+		
+        <span class="more">
+            <i class="icon-zoom-in"></i>
+        </span>
+                	<!-- <span class="prop-price-tag">$1,230/week</span> -->
+					<% if featured_property.photos.count > 0 %>
+						<%= image_tag featured_property.photos.order(desirability: :desc)[0].image_url.to_s, 
+						alt: "image", 
+						width: "800", height: "454",
+						class: "attachment-property-regular wp-post-image" %>
+						
+					<% else %>
+						<%= image_tag "fallback/default.png" %>
+					<% end %>
+
+		<% end %>
+        
+        
+        <span class="prop-tag">For Rent</span>
+        <div class="prop-info">
+            <h3 class="prop-title"><%= featured_property.title.to_s %></h3>
+            <ul class="more-info clearfix">
+												    <li class="info-label clearfix">
+        <span class="pull-left">Bedrooms</span>
+        <span class="qty pull-right"><%= featured_property.bed %> </span>
+    </li>
+            <li class="info-label clearfix">
+        <span class="pull-left">Bathrooms</span>
+        <span class="qty pull-right"><%= featured_property.bath %> </span>
+   </li>
+</ul>
+        </div>
+    </div>
+</li>
