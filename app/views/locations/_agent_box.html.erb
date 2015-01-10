@@ -27,7 +27,7 @@
 	  <% end %>
 		<%= f.text_field :full_name, placeholder: "Your Name",  required: "required", class: "input-block-level", tabindex: 1 %>
 		
- 		<%= f.text_field :full_name, placeholder: "Your Email",  required: "required", class: "input-block-level", tabindex: 2 %>
+ 		<%= f.text_field :email_address, placeholder: "Your Email",  required: "required", class: "input-block-level", tabindex: 2 %>
         <textarea class="input-block-level" name="sender_msg" required="required" rows="5">Hello, I'm interested in [<%= "#{@location.title}, #{@location.city}, #{@location.state}" %>]</textarea>
         <button type="submit" class="btn btn-realto">Contact Agent</button>
 	  
