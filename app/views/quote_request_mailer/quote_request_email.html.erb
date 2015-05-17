@@ -220,14 +220,14 @@
                 <ul>
                     <li class="clearfix">
                         <i class="icon-map-marker pull-left"></i>
-                        <p class="pull-left">40 N State Street, Salt Lake City UT </p></li>
+                        <p class="pull-left"><%= "#{@profile.street}, #{@profile.city} #{@profile.state} #{@profile.postal_code}" %> </p></li>
                     <li class="clearfix">
                         <i class="icon-phone pull-left"></i>
-                        <p class="pull-left">801-244-6440</p></li>
+                        <p class="pull-left"><%= @profile.phone.to_s %></p></li>
                     <li class="clearfix">
                         <i class="icon-envelope-alt pull-left"></i>
                         <p class="pull-left">
-							<a href="mailto:jetenterprises@me.com">jetenterprises@me.com</a>
+							<a href="mailto:<%= @profile.phone.to_s %>"><%= @profile.email_address.to_s %></a>
 						</p>
                     </li>
                 </ul>

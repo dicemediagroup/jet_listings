@@ -5,10 +5,10 @@
 						size: "70x70" %>
 					</div>
         <div class="pull-left">
-            <h3>Contact Agent</h3>
+            <h3>Contact</h3>
             <ul>
-                <li>Jim Tanner</li>
-                <li>801-644-2440</li>
+                <li><%= "#{@profile.first_name.to_s} #{@profile.last_name.to_s}"</li>
+                <li><%= @profile.phone.to_s %></li>
             </ul>
         </div>
     </div>
