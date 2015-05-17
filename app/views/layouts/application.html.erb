@@ -17,7 +17,6 @@
 <!--rails stuff -->
     <%= stylesheet_link_tag    "application", media: "all" %>
 	
-    <%# javascript_include_tag "application" %>
     <%= csrf_meta_tag %>
 	
 <!-- -->
@@ -39,11 +38,10 @@
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel='stylesheet' id='nt-colors-css'  href='http://demo.favethemes.com/wp/realto/wp-content/themes/realto/css/colors.css?ver=1' type='text/css' media='all' />
 <link rel='stylesheet' id='style-css'  href='https://fog-demo-1419715807.s3.amazonaws.com/wp-content/themes/realto/css/realty.css' type='text/css' media='all' />
-<script type='text/javascript' src='http://demo.favethemes.com/wp/realto/wp-includes/js/jquery/jquery.js?ver=1.11.1'></script>
-<script type='text/javascript' src='http://demo.favethemes.com/wp/realto/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
-<script type='text/javascript' src='http://demo.favethemes.com/wp/realto/wp-content/plugins/revslider/rs-plugin/js/jquery.themepunch.tools.min.js?ver=4.6.5'></script>
-<script type='text/javascript' src='http://demo.favethemes.com/wp/realto/wp-content/plugins/revslider/rs-plugin/js/jquery.themepunch.revolution.min.js?ver=4.6.5'></script>
-<script type='text/javascript' src='http://demo.favethemes.com/wp/realto/wp-content/themes/realto/js/jquery.gomap-1.3.2.min.js?ver=20140203'></script>
+
+<!-- local javascript -->
+    <%= javascript_include_tag "application" %>
+
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://demo.favethemes.com/wp/realto/xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://demo.favethemes.com/wp/realto/wp-includes/wlwmanifest.xml" /> 
 <link rel='prev' title='1198 Museum Mile, New York, NY 10029' href='http://demo.favethemes.com/wp/realto/property/1198-museum-mile-new-york-ny-10029/' />
