@@ -63,5 +63,15 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+  gem 'minitest'
+  gem 'passenger'
+  gem 'guard'
+  gem 'guard-minitest'
+  gem 'guard-passenger'
+  gem "guard-bundler", "~> 2.0.0"
+  gem 'rr', '~> 1.1.2'
+  gem 'activerecord-nulldb-adapter'
+  gem 'database_cleaner', '~> 1.3.0'
+  gem 'travis', '~> 1.7.4'
 end
 
