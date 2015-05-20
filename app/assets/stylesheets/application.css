@@ -11,6 +11,7 @@
  * file per style scope.
  *
  *= require bootstrap
+ *= require fontawesome
  * require leaflet
  *= require realty
  * require_tree .
